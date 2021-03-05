@@ -1,0 +1,27 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="org.kuesji.tracker">
+
+	<uses-permission
+		android:name="android.permission.PACKAGE_USAGE_STATS"
+		tools:ignore="ProtectedPermissions"/>
+
+	<application
+		android:icon="@drawable/app"
+		android:label="tracker"
+		android:theme="@android:style/Theme.Material.NoActionBar"
+		tools:ignore="LockedOrientationActivity">
+
+		<activity
+			android:name=".MainActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+
+	</application>
+</manifest>
